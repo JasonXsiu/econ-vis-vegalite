@@ -1,0 +1,88 @@
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Economic Growth, 1961-2020",
+  "data": {
+    "url": "https://raw.githubusercontent.com/JasonXsiu/asda/main/Econ_growth.csv"
+  },
+  "vconcat": [
+    {
+      "encoding": {
+        "color": {
+          "condition": {
+            "param": "brush",
+            "title": "Country",
+            "field": "country",
+            "type": "nominal",
+            "scale": {
+              "domain": ["China", "Germany", "Japan", "United Kingdom", "United States"],
+              "range": ["#EF3340", "#F1B420", "#CAA88C", "#E151AF", "#2740DA"]
+            }
+          },
+          "value": "lightgray"
+        },  
+        "tooltip": [
+          {"field":"country","type":"nominal"},
+          {"field":"Income","type":"quantitative"},
+          {"field":"Inflation","type":"quantitative"}
+
+        ],
+        "size": {
+          "title": "Income",
+          "field": "Income",
+          "type": "quantitative"
+        },
+        "x": {
+          "field": "Year",
+          "title": "Year",
+          "type": "ordinal"
+        },
+        "y": {
+          "title": "Inflation",
+          "field": "Inflation",
+          "type": "quantitative"
+        }
+      },
+      "width": 600,
+      "height": 300,
+      "mark": "point",
+      "params": [{
+        "name": "brush",
+        "select": {"type": "interval", "encodings": ["x"]}
+      }],
+      "transform": [{"filter": {"param": "click"}}]
+    },
+    {
+      "encoding": {
+        "color": {
+          "condition": {
+            "param": "click",
+            "field": "country",
+            "scale": {
+              "domain": ["China", "Germany", "Japan", "United Kingdom", "United States"],
+              "range": ["#e7ba52", "#a7a7a7", "#aec7e8", "#1f77b4", "#9467bd"]
+            }
+          },
+          "value": "lightgray"
+        },
+        "x": {     "title": "Income",
+          "field": "Income",
+          "type": "quantitative"},
+        "y": {"title": "Country", "field": "country"}
+      },
+      "width": 600,
+      "mark": "bar",
+      "params": [{
+        "name": "click",
+        "select": {"type": "point", "encodings": ["color"]}
+      }],
+      "transform": [{"filter": {"param": "brush"}}]     
+
+    }
+  ]
+}
+
+
+ 
+
+

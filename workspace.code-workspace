@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "1. basic bar chart",
+		"git.ignoreLimitWarning": true
+	}
+}

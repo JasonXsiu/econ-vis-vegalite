@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Ratio of foreign investment (Inflow to Outflow)",
+  "data": {
+    "url": "investment_cleaned.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.Year == 2018"
+    },
+    {
+      "calculate": "datum.In_or_Out == 'Inflow' ? 'Inflow' : 'Outflow'",
+      "as": "In_or_Out"
+    }
+  ],
+  "mark": "bar",
+  "width": {
+    "step": 30
+  },
+  "encoding": {
+    "y": {
+      "aggregate": "sum",
+      "field": "amount",
+      "type": "quantitative",
+      "title": "Proportion",
+      "stack": "normalize"
+    },
+    "x": {
+      "field": "country",
+      "type": "nominal"
+    },
+    "color": {
+      "field": "In_or_Out",
+      "type": "nominal",
+      "scale": {
+        "range": [
+          "#675193",
+          "#ca8861"
+        ]
+      }
+    }
+  }
+}

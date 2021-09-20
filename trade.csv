@@ -1,0 +1,611 @@
+"","country","Year","Type","Trade"
+"1","China","1960","Import",4.43
+"2","China","1960","Export",4.31
+"3","China","1961","Import",3.49
+"4","China","1961","Export",3.87
+"5","China","1962","Import",2.91
+"6","China","1962","Export",4.05
+"7","China","1963","Import",2.86
+"8","China","1963","Export",4.01
+"9","China","1964","Import",2.86
+"10","China","1964","Export",3.77
+"11","China","1965","Import",3.19
+"12","China","1965","Export",3.64
+"13","China","1966","Import",3.24
+"14","China","1966","Export",3.49
+"15","China","1967","Import",2.98
+"16","China","1967","Export",3.28
+"17","China","1968","Import",2.92
+"18","China","1968","Export",3.3
+"19","China","1969","Import",2.41
+"20","China","1969","Export",3.05
+"21","China","1970","Import",2.46
+"22","China","1970","Export",2.49
+"23","China","1971","Import",2.13
+"24","China","1971","Export",2.79
+"25","China","1972","Import",2.51
+"26","China","1972","Export",3.25
+"27","China","1973","Import",3.76
+"28","China","1973","Export",4.24
+"29","China","1974","Import",5.4
+"30","China","1974","Export",4.93
+"31","China","1975","Import",4.85
+"32","China","1975","Export",4.7
+"33","China","1976","Import",4.33
+"34","China","1976","Export",4.51
+"35","China","1977","Import",4.09
+"36","China","1977","Export",4.3
+"37","China","1978","Import",5.09
+"38","China","1978","Export",4.56
+"39","China","1979","Import",5.92
+"40","China","1979","Export",5.16
+"41","China","1980","Import",6.51
+"42","China","1980","Export",5.91
+"43","China","1981","Import",7.45
+"44","China","1981","Export",7.45
+"45","China","1982","Import",8.67
+"46","China","1982","Export",11
+"47","China","1983","Import",8.4
+"48","China","1983","Export",9.52
+"49","China","1984","Import",9.51
+"50","China","1984","Export",9.53
+"51","China","1985","Import",12.4
+"52","China","1985","Export",8.34
+"53","China","1986","Import",11.2
+"54","China","1986","Export",8.71
+"55","China","1987","Import",12.4
+"56","China","1987","Export",12.5
+"57","China","1988","Import",15.7
+"58","China","1988","Export",14.4
+"59","China","1989","Import",13.3
+"60","China","1989","Export",11.8
+"61","China","1990","Import",10.7
+"62","China","1990","Export",13.6
+"63","China","1991","Import",11.5
+"64","China","1991","Export",14.5
+"65","China","1992","Import",14.5
+"66","China","1992","Export",15.7
+"67","China","1993","Import",19.4
+"68","China","1993","Export",16.7
+"69","China","1994","Import",17.2
+"70","China","1994","Export",18.5
+"71","China","1995","Import",16.3
+"72","China","1995","Export",18
+"73","China","1996","Import",15.9
+"74","China","1996","Export",17.9
+"75","China","1997","Import",15
+"76","China","1997","Export",19.5
+"77","China","1998","Import",14.1
+"78","China","1998","Export",18.3
+"79","China","1999","Import",15.4
+"80","China","1999","Export",18.2
+"81","China","2000","Import",18.5
+"82","China","2000","Export",20.9
+"83","China","2001","Import",18.2
+"84","China","2001","Export",20.3
+"85","China","2002","Import",20.1
+"86","China","2002","Export",22.6
+"87","China","2003","Import",24.8
+"88","China","2003","Export",27
+"89","China","2004","Import",28.4
+"90","China","2004","Export",31.1
+"91","China","2005","Import",28.4
+"92","China","2005","Export",33.8
+"93","China","2006","Import",28.4
+"94","China","2006","Export",36
+"95","China","2007","Import",26.8
+"96","China","2007","Export",35.4
+"97","China","2008","Import",25
+"98","China","2008","Export",32.6
+"99","China","2009","Import",20.4
+"100","China","2009","Export",24.7
+"101","China","2010","Import",23.5
+"102","China","2010","Export",27.2
+"103","China","2011","Import",24.2
+"104","China","2011","Export",26.6
+"105","China","2012","Import",22.8
+"106","China","2012","Export",25.5
+"107","China","2013","Import",22.1
+"108","China","2013","Export",24.6
+"109","China","2014","Import",21.4
+"110","China","2014","Export",23.5
+"111","China","2015","Import",18.1
+"112","China","2015","Export",21.4
+"113","China","2016","Import",17.3
+"114","China","2016","Export",19.6
+"115","China","2017","Import",17.9
+"116","China","2017","Export",19.7
+"117","China","2018","Import",18.3
+"118","China","2018","Export",19.1
+"119","China","2019","Import",17.3
+"120","China","2019","Export",18.5
+"121","China","2020","Import",16
+"122","China","2020","Export",18.5
+"123","Germany","1960","Import",0
+"124","Germany","1960","Export",0
+"125","Germany","1961","Import",0
+"126","Germany","1961","Export",0
+"127","Germany","1962","Import",0
+"128","Germany","1962","Export",0
+"129","Germany","1963","Import",0
+"130","Germany","1963","Export",0
+"131","Germany","1964","Import",0
+"132","Germany","1964","Export",0
+"133","Germany","1965","Import",0
+"134","Germany","1965","Export",0
+"135","Germany","1966","Import",0
+"136","Germany","1966","Export",0
+"137","Germany","1967","Import",0
+"138","Germany","1967","Export",0
+"139","Germany","1968","Import",0
+"140","Germany","1968","Export",0
+"141","Germany","1969","Import",0
+"142","Germany","1969","Export",0
+"143","Germany","1970","Import",16.6
+"144","Germany","1970","Export",15.1
+"145","Germany","1971","Import",16.3
+"146","Germany","1971","Export",14.6
+"147","Germany","1972","Import",16.2
+"148","Germany","1972","Export",14.6
+"149","Germany","1973","Import",16.3
+"150","Germany","1973","Export",15.4
+"151","Germany","1974","Import",18.7
+"152","Germany","1974","Export",18.2
+"153","Germany","1975","Import",18.8
+"154","Germany","1975","Export",17.1
+"155","Germany","1976","Import",20.3
+"156","Germany","1976","Export",18.1
+"157","Germany","1977","Import",20.1
+"158","Germany","1977","Export",18
+"159","Germany","1978","Import",19.5
+"160","Germany","1978","Export",17.6
+"161","Germany","1979","Import",21.4
+"162","Germany","1979","Export",17.8
+"163","Germany","1980","Import",23.2
+"164","Germany","1980","Export",18.6
+"165","Germany","1981","Import",24
+"166","Germany","1981","Export",20.1
+"167","Germany","1982","Import",23.5
+"168","Germany","1982","Export",20.9
+"169","Germany","1983","Import",23.3
+"170","Germany","1983","Export",20.3
+"171","Germany","1984","Import",24.5
+"172","Germany","1984","Export",21.7
+"173","Germany","1985","Import",25
+"174","Germany","1985","Export",22.9
+"175","Germany","1986","Import",21.7
+"176","Germany","1986","Export",21.3
+"177","Germany","1987","Import",21
+"178","Germany","1987","Export",20.7
+"179","Germany","1988","Import",21.4
+"180","Germany","1988","Export",21.1
+"181","Germany","1989","Import",22.9
+"182","Germany","1989","Export",22.3
+"183","Germany","1990","Import",23
+"184","Germany","1990","Export",22.8
+"185","Germany","1991","Import",24.2
+"186","Germany","1991","Export",23.7
+"187","Germany","1992","Import",22.7
+"188","Germany","1992","Export",22.2
+"189","Germany","1993","Import",20.3
+"190","Germany","1993","Export",20.3
+"191","Germany","1994","Import",20.9
+"192","Germany","1994","Export",21.1
+"193","Germany","1995","Import",21.6
+"194","Germany","1995","Export",22
+"195","Germany","1996","Import",22.1
+"196","Germany","1996","Export",22.9
+"197","Germany","1997","Import",24.3
+"198","Germany","1997","Export",25.4
+"199","Germany","1998","Import",25.2
+"200","Germany","1998","Export",26.4
+"201","Germany","1999","Import",26.4
+"202","Germany","1999","Export",27
+"203","Germany","2000","Import",30.7
+"204","Germany","2000","Export",30.8
+"205","Germany","2001","Import",30.2
+"206","Germany","2001","Export",31.8
+"207","Germany","2002","Import",28.3
+"208","Germany","2002","Export",32.6
+"209","Germany","2003","Import",29
+"210","Germany","2003","Export",32.8
+"211","Germany","2004","Import",30.5
+"212","Germany","2004","Export",35.7
+"213","Germany","2005","Import",32.9
+"214","Germany","2005","Export",38.1
+"215","Germany","2006","Import",36
+"216","Germany","2006","Export",41.4
+"217","Germany","2007","Import",36.6
+"218","Germany","2007","Export",43.3
+"219","Germany","2008","Import",37.7
+"220","Germany","2008","Export",43.8
+"221","Germany","2009","Import",33.1
+"222","Germany","2009","Export",38.1
+"223","Germany","2010","Import",37.3
+"224","Germany","2010","Export",42.6
+"225","Germany","2011","Import",40.1
+"226","Germany","2011","Export",45.1
+"227","Germany","2012","Import",40.2
+"228","Germany","2012","Export",46.3
+"229","Germany","2013","Import",39.7
+"230","Germany","2013","Export",45.4
+"231","Germany","2014","Import",39
+"232","Germany","2014","Export",45.6
+"233","Germany","2015","Import",39.3
+"234","Germany","2015","Export",46.9
+"235","Germany","2016","Import",38.7
+"236","Germany","2016","Export",46.1
+"237","Germany","2017","Import",40.2
+"238","Germany","2017","Export",47.2
+"239","Germany","2018","Import",41.2
+"240","Germany","2018","Export",47.4
+"241","Germany","2019","Import",41.1
+"242","Germany","2019","Export",46.9
+"243","Germany","2020","Import",38
+"244","Germany","2020","Export",43.8
+"245","Japan","1960","Import",0
+"246","Japan","1960","Export",0
+"247","Japan","1961","Import",0
+"248","Japan","1961","Export",0
+"249","Japan","1962","Import",0
+"250","Japan","1962","Export",0
+"251","Japan","1963","Import",0
+"252","Japan","1963","Export",0
+"253","Japan","1964","Import",0
+"254","Japan","1964","Export",0
+"255","Japan","1965","Import",0
+"256","Japan","1965","Export",0
+"257","Japan","1966","Import",0
+"258","Japan","1966","Export",0
+"259","Japan","1967","Import",0
+"260","Japan","1967","Export",0
+"261","Japan","1968","Import",0
+"262","Japan","1968","Export",0
+"263","Japan","1969","Import",0
+"264","Japan","1969","Export",0
+"265","Japan","1970","Import",9.21
+"266","Japan","1970","Export",10.4
+"267","Japan","1971","Import",8.69
+"268","Japan","1971","Export",11.2
+"269","Japan","1972","Import",8
+"270","Japan","1972","Export",10.1
+"271","Japan","1973","Import",9.68
+"272","Japan","1973","Export",9.62
+"273","Japan","1974","Import",13.9
+"274","Japan","1974","Export",13
+"275","Japan","1975","Import",12.3
+"276","Japan","1975","Export",12.3
+"277","Japan","1976","Import",12.3
+"278","Japan","1976","Export",13
+"279","Japan","1977","Import",11.1
+"280","Japan","1977","Export",12.6
+"281","Japan","1978","Import",9.07
+"282","Japan","1978","Export",10.7
+"283","Japan","1979","Import",12.1
+"284","Japan","1979","Export",11.1
+"285","Japan","1980","Import",14.1
+"286","Japan","1980","Export",13.1
+"287","Japan","1981","Import",13.5
+"288","Japan","1981","Export",14.1
+"289","Japan","1982","Import",13.4
+"290","Japan","1982","Export",13.9
+"291","Japan","1983","Import",11.8
+"292","Japan","1983","Export",13.3
+"293","Japan","1984","Import",11.9
+"294","Japan","1984","Export",14.4
+"295","Japan","1985","Import",10.7
+"296","Japan","1985","Export",13.9
+"297","Japan","1986","Import",7.24
+"298","Japan","1986","Export",10.9
+"299","Japan","1987","Import",7.17
+"300","Japan","1987","Export",9.94
+"301","Japan","1988","Import",7.61
+"302","Japan","1988","Export",9.57
+"303","Japan","1989","Import",8.76
+"304","Japan","1989","Export",10.1
+"305","Japan","1990","Import",9.44
+"306","Japan","1990","Export",10.2
+"307","Japan","1991","Import",8.29
+"308","Japan","1991","Export",9.79
+"309","Japan","1992","Import",7.64
+"310","Japan","1992","Export",9.69
+"311","Japan","1993","Import",6.94
+"312","Japan","1993","Export",9.08
+"313","Japan","1994","Import",7.1
+"314","Japan","1994","Export",9
+"315","Japan","1995","Import",7.71
+"316","Japan","1995","Export",8.97
+"317","Japan","1996","Import",9.05
+"318","Japan","1996","Export",9.48
+"319","Japan","1997","Import",9.49
+"320","Japan","1997","Export",10.5
+"321","Japan","1998","Import",8.71
+"322","Japan","1998","Export",10.5
+"323","Japan","1999","Import",8.4
+"324","Japan","1999","Export",9.95
+"325","Japan","2000","Import",9.2
+"326","Japan","2000","Export",10.6
+"327","Japan","2001","Import",9.57
+"328","Japan","2001","Export",10.2
+"329","Japan","2002","Import",9.67
+"330","Japan","2002","Export",11
+"331","Japan","2003","Import",9.94
+"332","Japan","2003","Export",11.6
+"333","Japan","2004","Import",11
+"334","Japan","2004","Export",13
+"335","Japan","2005","Import",12.5
+"336","Japan","2005","Export",14
+"337","Japan","2006","Import",14.5
+"338","Japan","2006","Export",15.9
+"339","Japan","2007","Import",15.6
+"340","Japan","2007","Export",17.5
+"341","Japan","2008","Import",17
+"342","Japan","2008","Export",17.4
+"343","Japan","2009","Import",12
+"344","Japan","2009","Export",12.5
+"345","Japan","2010","Import",13.6
+"346","Japan","2010","Export",15
+"347","Japan","2011","Import",15.5
+"348","Japan","2011","Export",14.9
+"349","Japan","2012","Import",16.1
+"350","Japan","2012","Export",14.5
+"351","Japan","2013","Import",18.2
+"352","Japan","2013","Export",15.9
+"353","Japan","2014","Import",20
+"354","Japan","2014","Export",17.5
+"355","Japan","2015","Import",18
+"356","Japan","2015","Export",17.6
+"357","Japan","2016","Import",15.3
+"358","Japan","2016","Export",16.3
+"359","Japan","2017","Import",16.8
+"360","Japan","2017","Export",17.8
+"361","Japan","2018","Import",18.3
+"362","Japan","2018","Export",18.5
+"363","Japan","2019","Import",17.4
+"364","Japan","2019","Export",17.6
+"365","Japan","2020","Import",0
+"366","Japan","2020","Export",0
+"367","United Kingdom","1960","Import",0
+"368","United Kingdom","1960","Export",0
+"369","United Kingdom","1961","Import",0
+"370","United Kingdom","1961","Export",0
+"371","United Kingdom","1962","Import",0
+"372","United Kingdom","1962","Export",0
+"373","United Kingdom","1963","Import",0
+"374","United Kingdom","1963","Export",0
+"375","United Kingdom","1964","Import",0
+"376","United Kingdom","1964","Export",0
+"377","United Kingdom","1965","Import",0
+"378","United Kingdom","1965","Export",0
+"379","United Kingdom","1966","Import",0
+"380","United Kingdom","1966","Export",0
+"381","United Kingdom","1967","Import",0
+"382","United Kingdom","1967","Export",0
+"383","United Kingdom","1968","Import",0
+"384","United Kingdom","1968","Export",0
+"385","United Kingdom","1969","Import",0
+"386","United Kingdom","1969","Export",0
+"387","United Kingdom","1970","Import",21
+"388","United Kingdom","1970","Export",21.8
+"389","United Kingdom","1971","Import",20.5
+"390","United Kingdom","1971","Export",21.9
+"391","United Kingdom","1972","Import",20.7
+"392","United Kingdom","1972","Export",20.6
+"393","United Kingdom","1973","Import",24.8
+"394","United Kingdom","1973","Export",22.4
+"395","United Kingdom","1974","Import",31.7
+"396","United Kingdom","1974","Export",26.8
+"397","United Kingdom","1975","Import",27.1
+"398","United Kingdom","1975","Export",25.4
+"399","United Kingdom","1976","Import",29.1
+"400","United Kingdom","1976","Export",28
+"401","United Kingdom","1977","Import",29
+"402","United Kingdom","1977","Export",29.7
+"403","United Kingdom","1978","Import",26.7
+"404","United Kingdom","1978","Export",28
+"405","United Kingdom","1979","Import",27
+"406","United Kingdom","1979","Export",27.4
+"407","United Kingdom","1980","Import",24.4
+"408","United Kingdom","1980","Export",26.6
+"409","United Kingdom","1981","Import",23.1
+"410","United Kingdom","1981","Export",26
+"411","United Kingdom","1982","Import",23.7
+"412","United Kingdom","1982","Export",25.6
+"413","United Kingdom","1983","Import",24.8
+"414","United Kingdom","1983","Export",25.7
+"415","United Kingdom","1984","Import",27.6
+"416","United Kingdom","1984","Export",27.5
+"417","United Kingdom","1985","Import",26.8
+"418","United Kingdom","1985","Export",27.9
+"419","United Kingdom","1986","Import",25.4
+"420","United Kingdom","1986","Export",24.8
+"421","United Kingdom","1987","Import",25.3
+"422","United Kingdom","1987","Export",24.3
+"423","United Kingdom","1988","Import",25.2
+"424","United Kingdom","1988","Export",21.9
+"425","United Kingdom","1989","Import",26
+"426","United Kingdom","1989","Export",22.4
+"427","United Kingdom","1990","Import",24.9
+"428","United Kingdom","1990","Export",23.1
+"429","United Kingdom","1991","Import",22.7
+"430","United Kingdom","1991","Export",22.3
+"431","United Kingdom","1992","Import",23.4
+"432","United Kingdom","1992","Export",22.7
+"433","United Kingdom","1993","Import",24.9
+"434","United Kingdom","1993","Export",24.6
+"435","United Kingdom","1994","Import",25.8
+"436","United Kingdom","1994","Export",25.8
+"437","United Kingdom","1995","Import",25.3
+"438","United Kingdom","1995","Export",25.6
+"439","United Kingdom","1996","Import",26
+"440","United Kingdom","1996","Export",26.2
+"441","United Kingdom","1997","Import",25.1
+"442","United Kingdom","1997","Export",25.6
+"443","United Kingdom","1998","Import",24.8
+"444","United Kingdom","1998","Export",24.1
+"445","United Kingdom","1999","Import",25.4
+"446","United Kingdom","1999","Export",23.9
+"447","United Kingdom","2000","Import",27
+"448","United Kingdom","2000","Export",25.2
+"449","United Kingdom","2001","Import",27.5
+"450","United Kingdom","2001","Export",25.2
+"451","United Kingdom","2002","Import",26.9
+"452","United Kingdom","2002","Export",24.2
+"453","United Kingdom","2003","Import",26.2
+"454","United Kingdom","2003","Export",23.9
+"455","United Kingdom","2004","Import",26.4
+"456","United Kingdom","2004","Export",23.8
+"457","United Kingdom","2005","Import",27.5
+"458","United Kingdom","2005","Export",25.1
+"459","United Kingdom","2006","Import",29.4
+"460","United Kingdom","2006","Export",27.3
+"461","United Kingdom","2007","Import",27.4
+"462","United Kingdom","2007","Export",25.4
+"463","United Kingdom","2008","Import",29.2
+"464","United Kingdom","2008","Export",27
+"465","United Kingdom","2009","Import",28
+"466","United Kingdom","2009","Export",26.4
+"467","United Kingdom","2010","Import",30.2
+"468","United Kingdom","2010","Export",28.3
+"469","United Kingdom","2011","Import",31.7
+"470","United Kingdom","2011","Export",30.7
+"471","United Kingdom","2012","Import",31.2
+"472","United Kingdom","2012","Export",30
+"473","United Kingdom","2013","Import",31.3
+"474","United Kingdom","2013","Export",29.9
+"475","United Kingdom","2014","Import",29.8
+"476","United Kingdom","2014","Export",28.2
+"477","United Kingdom","2015","Import",28.7
+"478","United Kingdom","2015","Export",27.3
+"479","United Kingdom","2016","Import",30
+"480","United Kingdom","2016","Export",28.2
+"481","United Kingdom","2017","Import",31.6
+"482","United Kingdom","2017","Export",30.1
+"483","United Kingdom","2018","Import",32.1
+"484","United Kingdom","2018","Export",30.9
+"485","United Kingdom","2019","Import",32.3
+"486","United Kingdom","2019","Export",31.1
+"487","United Kingdom","2020","Import",27.7
+"488","United Kingdom","2020","Export",27.4
+"489","United States","1960","Import",0
+"490","United States","1960","Export",0
+"491","United States","1961","Import",0
+"492","United States","1961","Export",0
+"493","United States","1962","Import",0
+"494","United States","1962","Export",0
+"495","United States","1963","Import",0
+"496","United States","1963","Export",0
+"497","United States","1964","Import",0
+"498","United States","1964","Export",0
+"499","United States","1965","Import",0
+"500","United States","1965","Export",0
+"501","United States","1966","Import",0
+"502","United States","1966","Export",0
+"503","United States","1967","Import",0
+"504","United States","1967","Export",0
+"505","United States","1968","Import",0
+"506","United States","1968","Export",0
+"507","United States","1969","Import",0
+"508","United States","1969","Export",0
+"509","United States","1970","Import",5.2
+"510","United States","1970","Export",5.56
+"511","United States","1971","Import",5.35
+"512","United States","1971","Export",5.41
+"513","United States","1972","Import",5.8
+"514","United States","1972","Export",5.54
+"515","United States","1973","Import",6.4
+"516","United States","1973","Export",6.68
+"517","United States","1974","Import",8.25
+"518","United States","1974","Export",8.2
+"519","United States","1975","Import",7.28
+"520","United States","1975","Export",8.23
+"521","United States","1976","Import",8.07
+"522","United States","1976","Export",7.98
+"523","United States","1977","Import",8.76
+"524","United States","1977","Export",7.65
+"525","United States","1978","Import",9.03
+"526","United States","1978","Export",7.95
+"527","United States","1979","Import",9.62
+"528","United States","1979","Export",8.76
+"529","United States","1980","Import",10.3
+"530","United States","1980","Export",9.83
+"531","United States","1981","Import",9.91
+"532","United States","1981","Export",9.52
+"533","United States","1982","Import",9.07
+"534","United States","1982","Export",8.47
+"535","United States","1983","Import",9.04
+"536","United States","1983","Export",7.62
+"537","United States","1984","Import",10
+"538","United States","1984","Export",7.49
+"539","United States","1985","Import",9.62
+"540","United States","1985","Export",6.99
+"541","United States","1986","Import",9.89
+"542","United States","1986","Export",7.01
+"543","United States","1987","Import",10.5
+"544","United States","1987","Export",7.5
+"545","United States","1988","Import",10.6
+"546","United States","1988","Export",8.49
+"547","United States","1989","Import",10.5
+"548","United States","1989","Export",8.94
+"549","United States","1990","Import",10.6
+"550","United States","1990","Export",9.25
+"551","United States","1991","Import",10.1
+"552","United States","1991","Export",9.66
+"553","United States","1992","Import",10.2
+"554","United States","1992","Export",9.71
+"555","United States","1993","Import",10.5
+"556","United States","1993","Export",9.55
+"557","United States","1994","Import",11.2
+"558","United States","1994","Export",9.89
+"559","United States","1995","Import",11.8
+"560","United States","1995","Export",10.6
+"561","United States","1996","Import",11.9
+"562","United States","1996","Export",10.7
+"563","United States","1997","Import",12.3
+"564","United States","1997","Export",11.1
+"565","United States","1998","Import",12.3
+"566","United States","1998","Export",10.5
+"567","United States","1999","Import",13
+"568","United States","1999","Export",10.3
+"569","United States","2000","Import",14.4
+"570","United States","2000","Export",10.7
+"571","United States","2001","Import",13.2
+"572","United States","2001","Export",9.68
+"573","United States","2002","Import",13
+"574","United States","2002","Export",9.13
+"575","United States","2003","Import",13.4
+"576","United States","2003","Export",9.04
+"577","United States","2004","Import",14.7
+"578","United States","2004","Export",9.64
+"579","United States","2005","Import",15.5
+"580","United States","2005","Export",10
+"581","United States","2006","Import",16.2
+"582","United States","2006","Export",10.7
+"583","United States","2007","Import",16.5
+"584","United States","2007","Export",11.5
+"585","United States","2008","Import",17.4
+"586","United States","2008","Export",12.5
+"587","United States","2009","Import",13.7
+"588","United States","2009","Export",10.9
+"589","United States","2010","Import",15.7
+"590","United States","2010","Export",12.3
+"591","United States","2011","Import",17.3
+"592","United States","2011","Export",13.5
+"593","United States","2012","Import",17
+"594","United States","2012","Export",13.5
+"595","United States","2013","Import",16.5
+"596","United States","2013","Export",13.5
+"597","United States","2014","Import",16.4
+"598","United States","2014","Export",13.5
+"599","United States","2015","Import",15.3
+"600","United States","2015","Export",12.4
+"601","United States","2016","Import",14.6
+"602","United States","2016","Export",11.9
+"603","United States","2017","Import",15
+"604","United States","2017","Export",12.2
+"605","United States","2018","Import",15.2
+"606","United States","2018","Export",12.3
+"607","United States","2019","Import",14.6
+"608","United States","2019","Export",11.7
+"609","United States","2020","Import",0
+"610","United States","2020","Export",0

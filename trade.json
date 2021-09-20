@@ -1,0 +1,164 @@
+{
+  "params": [
+    { 
+      "name": "YearFilter", "value": 2000,
+      "bind": {"input": "range", "min": 1960, "max": 2020, "step": 1}    
+    
+    }
+
+    ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A population pyramid for the US in 2000.",
+  "data": {
+    "url": "trade.csv"
+  },
+  "transform": [
+    {
+      "filter": "datum.Year == YearFilter"
+
+
+    },
+    {
+      "calculate": "datum.Type == 'Import' ? 'Import' : 'Export'",
+      "as": "Type"
+    }
+  ],
+  "spacing": 0,
+  "hconcat": [
+    {
+      "transform": [
+        {
+          "filter": {
+            "field": "Type",
+            "equal": "Import"
+          }
+        }
+      ],
+      "title": "Imports of goods and services ",
+      "mark": "bar",
+      "encoding": {
+
+        
+        "y": {
+          "field": "country",
+          "axis": null,
+          "sort": "descending",
+          "type": "nominal"
+        },
+        
+        "x": {
+
+          
+          "transform": {
+            "filter": "datum.Type == 'Import'"
+          },
+          "field": "Trade",
+          "type": "quantitative",
+          "title": "Import (% of GDP)",
+          "axis": {
+            "format": "s"
+          },
+          "sort": "descending"
+        },
+        "tooltip": [
+          {
+            "field": "country",
+            "type": "nominal",
+            "title": "Country"
+          },
+          {
+            "field": "Trade",
+            "type": "quantitative",
+            "title": "Import (% of GDP)"
+          }
+        ],
+        "color": {
+          "field": "Type",
+          "scale": {
+            "range": [
+              "#675193",
+              "#ca8861"
+            ]
+          },
+          "legend": null
+        }
+      }
+    },
+    {
+      "width": 20,
+      "view": {
+        "stroke": null
+      },
+      "mark": {
+        "type": "text",
+        "align": "center"
+      },
+      "encoding": {
+        "y": {
+          "field": "country",
+          "type": "nominal",
+          "axis": null,
+          "sort": "descending"
+        },
+        "text": {
+          "field": "country",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": {
+            "field": "Type",
+            "equal": "Export"
+          }
+        }
+      ],
+      "title": "Exports of goods and services ",
+      "mark": "bar",
+      "encoding": {
+        "y": {
+          "field": "country",
+          "title": null,
+          "axis": null
+        },
+        "x": {
+          "transform": {
+            "filter": "datum.Type == 'Export'"
+          },
+          "field": "Trade",
+          "type": "quantitative",
+          "title": "Export (% of GDP)",
+          "axis": {
+            "format": "s"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "country",
+            "type": "nominal",
+            "title": "Country"
+          },
+          {
+            "field": "Trade",
+            "type": "quantitative",
+            "title": "Export (% of GDP)"
+          }
+        ],
+        "color": {
+          "field": "Type",
+          "legend": null
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "grid": false
+    }
+  }
+}
