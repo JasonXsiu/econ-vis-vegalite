@@ -1,0 +1,207 @@
+﻿Country,Test,Test2005
+ Afghanistan,0.42,5
+ Albania,0.71,48
+ Algeria,0.69,41
+ Andorra,0.83,73
+ Angola,0.46,68
+ Antigua and Barbuda,0.76,11
+ Argentina,0.79,47
+ Armenia,0.71,105
+ Australia,0.91,88
+ Austria,0.86,57
+ Azerbaijan,0.67,69
+ Bahamas,0.8,62
+ Bahrain,0.8,61
+ Bangladesh,0.51,92
+ Barbados,0.79,62
+ Belarus,0.73,25
+ Belgium,0.9,20
+ Belize,0.66,55
+ Benin,0.46,77
+ Bhutan,0.52,8
+ Bolivia (Plurinational State of),0.64,41
+ Bosnia and Herzegovina,0.71,4
+ Botswana,0.6,18
+ Brazil,0.7,116
+ Brunei Darussalam,0.82,34
+ Bulgaria,0.76,71
+ Burkina Faso,0.33,58
+ Burundi,0.34,18
+ Cabo Verde,0.6,29
+ Cambodia,0.49,119
+ Cameroon,0.47,83
+ Canada,0.89,106
+ Central African Republic,0.34,94
+ Chad,0.33,17
+ Chile,0.79,85
+ China,0.64,90
+ Colombia,0.69,24
+ Comoros,0.49,106
+ Congo,0.47,101
+ Congo (Democratic Republic of the),0.38,17
+ Costa Rica,0.74,99
+ Croatia,0.79,61
+ Cuba,0.73,114
+ Cyprus,0.84,101
+ Czechia,0.84,55
+ Côte d'Ivoire,0.44,115
+ Denmark,0.91,102
+ Djibouti,0.4,100
+ Dominica,0.72,120
+ Dominican Republic,0.68,101
+ Ecuador,0.7,119
+ Egypt,0.64,117
+ El Salvador,0.65,119
+ Equatorial Guinea,0.57,47
+ Eritrea,0.43,16
+ Estonia,0.83,62
+ Eswatini (Kingdom of),0.46,106
+ Ethiopia,0.36,86
+ Fiji,0.71,25
+ Finland,0.91,18
+ France,0.87,94
+ Gabon,0.63,29
+ Gambia,0.44,106
+ Georgia,0.73,14
+ Germany,0.91,45
+ Ghana,0.52,110
+ Greece,0.85,70
+ Grenada,0.74,68
+ Guatemala,0.57,38
+ Guinea,0.38,83
+ Guinea-Bissau,0.4,106
+ Guyana,0.63,27
+ Haiti,0.45,42
+ Honduras,0.59,16
+" Hong Kong, China (SAR)",0.87,30
+ Hungary,0.81,20
+ Iceland,0.9,121
+ India,0.54,68
+ Indonesia,0.63,66
+ Iran (Islamic Republic of),0.68,117
+ Iraq,0.62,65
+ Ireland,0.9,100
+ Israel,0.88,13
+ Italy,0.87,37
+ Jamaica,0.71,122
+ Japan,0.88,11
+ Jordan,0.74,114
+ Kazakhstan,0.75,36
+ Kenya,0.5,26
+ Kiribati,0.59,12
+ Korea (Republic of),0.86,94
+ Kuwait,0.78,40
+ Kyrgyzstan,0.64,13
+ Lao People's Democratic Republic,0.51,60
+ Latvia,0.81,104
+ Lebanon,0.74,74
+ Lesotho,0.44,28
+ Liberia,0.43,62
+ Libya,0.8,78
+ Liechtenstein,0.89,51
+ Lithuania,0.82,96
+ Luxembourg,0.88,24
+ Madagascar,0.49,25
+ Malawi,0.37,16
+ Malaysia,0.73,110
+ Maldives,0.65,82
+ Mali,0.37,72
+ Malta,0.83,15
+ Marshall Islands,..,36
+ Mauritania,0.49,45
+ Mauritius,0.72,100
+ Mexico,0.74,73
+ Micronesia (Federated States of),0.58,78
+ Moldova (Republic of),0.69,50
+ Mongolia,0.65,29
+ Montenegro,..,34
+ Morocco,0.58,93
+ Mozambique,0.36,44
+ Myanmar,0.46,104
+ Namibia,0.55,83
+ Nepal,0.48,80
+ Netherlands,0.9,8
+ New Zealand,0.9,91
+ Nicaragua,0.6,97
+ Niger,0.29,56
+ Nigeria,0.47,73
+ North Macedonia,0.71,16
+ Norway,0.93,7
+ Oman,0.74,2
+ Pakistan,0.49,12
+ Palau,0.77,37
+" Palestine, State of",0.66,19
+ Panama,0.75,8
+ Papua New Guinea,0.48,42
+ Paraguay,0.67,119
+ Peru,0.7,122
+ Philippines,0.65,28
+ Poland,0.81,104
+ Portugal,0.81,23
+ Qatar,0.84,89
+ Romania,0.76,37
+ Russian Federation,0.75,51
+ Rwanda,0.41,29
+ Saint Kitts and Nevis,0.71,87
+ Saint Lucia,0.7,75
+ Saint Vincent and the Grenadines,0.71,35
+ Samoa,0.68,47
+ Sao Tome and Principe,0.53,42
+ Saudi Arabia,0.77,116
+ Senegal,0.43,65
+ Serbia,0.75,45
+ Seychelles,0.73,15
+ Sierra Leone,0.35,33
+ Singapore,0.87,40
+ Slovakia,0.8,62
+ Slovenia,0.87,28
+ Solomon Islands,0.51,116
+ South Africa,0.62,120
+ South Sudan,..,117
+ Spain,0.85,67
+ Sri Lanka,0.73,15
+ Sudan,0.44,116
+ Suriname,0.69,41
+ Sweden,0.9,12
+ Switzerland,0.91,81
+ Syrian Arab Republic,0.65,36
+ Tajikistan,0.61,111
+ Tanzania (United Republic of),0.44,23
+ Thailand,0.7,85
+ Timor-Leste,0.54,91
+ Togo,0.44,38
+ Tonga,0.68,70
+ Trinidad and Tobago,0.75,46
+ Tunisia,0.69,62
+ Turkey,0.7,84
+ Turkmenistan,..,92
+ Uganda,0.44,114
+ Ukraine,0.74,83
+ United Arab Emirates,0.81,46
+ United Kingdom,0.9,8
+ United States,0.9,18
+ Uruguay,0.76,118
+ Uzbekistan,0.63,113
+ Vanuatu,0.57,123
+ Venezuela (Bolivarian Republic of),0.72,57
+ Viet Nam,0.62,107
+ Yemen,0.48,47
+ Zambia,0.47,20
+ Zimbabwe,0.41,97
+Human Development,..,90
+Very high human development,0.85,105
+High human development,0.67,100
+Medium human development,0.54,72
+Low human development,0.44,24
+Developing Countries,0.61,102
+Regions,..,23
+Arab States,0.65,51
+East Asia and the Pacific,0.64,31
+Europe and Central Asia,0.7,33
+Latin America and the Caribbean,0.71,58
+South Asia,0.54,49
+Sub-Saharan Africa,0.46,103
+Least Developed Countries,0.44,117
+Small Island Developing States,0.67,114
+Organization for Economic Co-operation and Development,0.86,58
+World,0.67,17
