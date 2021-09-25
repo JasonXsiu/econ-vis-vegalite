@@ -1,0 +1,56 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": ")",
+    "width": 800,
+    "height": 600,
+    "data": {
+        "url": "https://raw.githubusercontent.com/KaneSec/vega_lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+        "format": {
+            "type": "topojson",
+            "feature": "ne_110m_admin_0_countries"
+        }
+    },
+    "transform": [{
+        "lookup": "properties.NAME_LONG",
+        "from": {
+            "data": {
+                "url": "https://raw.githubusercontent.com/JasonXsiu/econ-vis-vegalite/main/dataset/HDI.csv"
+            },
+            "key": "Country",
+            "fields": [
+                "2019"
+            ]
+        }
+    }],
+    "projection": {
+        "type": "equirectangular"
+    },
+    "mark": {
+        "type": "geoshape"
+    },
+    "encoding": {
+        "color": {
+            "field": "2019",
+            "type": "quantitative",
+            "title": "HDI"
+        },
+        "tooltip": [{
+                "field": "properties.NAME",
+                "type": "nominal",
+                "title": "Country"
+            },
+            {
+                "title": "Test2005",
+                "field": "2019",
+                "type": "quantitative"
+            }
+        ]
+    },
+    "config": {
+        "font": "Space Grotesk",
+        "axis": {
+            "labelFontSize": 10,
+            "titleFontSize": 15
+        }
+    }
+}
