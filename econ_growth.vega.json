@@ -1,6 +1,6 @@
 {
     "params": [{
-        "name": "YearFilter",
+        "name": "Year",
         "value": 2000,
         "bind": {
             "input": "range",
@@ -10,7 +10,7 @@
         }
     }],
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Economic Growth, 1961-2020",
+    "title": "Inflation growth for the top 5 economies, 1961-2020",
     "background": "#FBF7EB",
     "data": {
         "url": "https://raw.githubusercontent.com/JasonXsiu/econ-vis-vegalite/main/dataset/Econ_growth.csv"
@@ -52,6 +52,9 @@
                     },
                     {
                         "field": "Inflation",
+                        "type": "quantitative"
+                    }, {
+                        "field": "Year",
                         "type": "quantitative"
                     }
                 ],
@@ -126,6 +129,8 @@
             },
             "width": 800,
             "mark": "bar",
+            "title": "Income for the top 5 economies, 1961-2020",
+
             "params": [{
                 "name": "click",
                 "select": {
@@ -141,7 +146,7 @@
                     }
                 },
                 {
-                    "filter": "datum.Year == YearFilter"
+                    "filter": "datum.Year == Year"
                 }
             ]
         }

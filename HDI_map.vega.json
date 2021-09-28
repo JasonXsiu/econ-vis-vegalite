@@ -15,53 +15,96 @@
     "width": 900,
     "height": 390,
     "data": {
-        "url": "https://raw.githubusercontent.com/JasonXsiu/econ-vis-vegalite/master/HDI.csv"
+        "url": "https://raw.githubusercontent.com/JasonXsiu/econ-vis-vegalite/main/dataset/HDI.csv"
     },
-    "transform": [{
-            "lookup": "country",
-            "from": {
-                "data": {
-                    "url": "https://raw.githubusercontent.com/KaneSec/vega_lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
-                    "format": {
-                        "type": "topojson",
-                        "feature": "ne_110m_admin_0_countries"
-                    }
+    "layer": [
+
+        {
+
+            "transform": [{
+                    "lookup": "country",
+                    "from": {
+                        "data": {
+                            "url": "https://raw.githubusercontent.com/KaneSec/vega_lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+                            "format": {
+                                "type": "topojson",
+                                "feature": "ne_110m_admin_0_countries"
+                            }
+                        },
+                        "key": "properties.NAME"
+                    },
+                    "as": "geo"
                 },
-                "key": "properties.NAME_LONG"
-            },
-            "as": "geo"
+                {
+                    "filter": "datum.Year == YearFilter"
+                }, { "calculate": "'Data is not available in ' + datum.country", "as": "note" }
+            ]
+
+            ,
+            "mark": { "type": "geoshape", "fill": "lightgray", "stroke": "white" },
+            "encoding": {
+                "tooltip": {
+                    "field": "note"
+                },
+
+                "shape": {
+                    "field": "geo",
+                    "type": "geojson"
+                }
+
+            }
         },
         {
-            "filter": "datum.Year == YearFilter"
-        }
-    ],
-    "projection": {
-        "type": "equirectangular"
-    },
-    "mark": {
-        "type": "geoshape"
-    },
-    "encoding": {
-        "shape": {
-            "field": "geo",
-            "type": "geojson"
-        },
-        "color": {
-            "field": "HDI",
-            "type": "quantitative"
-        },
-        "tooltip": [{
-                "field": "country",
-                "type": "nominal",
-                "title": "country"
+            "transform": [{
+                    "lookup": "country",
+                    "from": {
+                        "data": {
+                            "url": "https://raw.githubusercontent.com/KaneSec/vega_lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+                            "format": {
+                                "type": "topojson",
+                                "feature": "ne_110m_admin_0_countries"
+                            }
+                        },
+                        "key": "properties.NAME_LONG"
+                    },
+                    "as": "geo"
+                },
+                {
+                    "filter": "datum.Year == YearFilter"
+                }
+            ],
+            "projection": {
+                "type": "equirectangular"
             },
-            {
-                "title": "HDI",
-                "field": "HDI",
-                "type": "quantitative"
+            "mark": {
+                "type": "geoshape",
+                "stroke": "white"
+            },
+            "encoding": {
+                "shape": {
+                    "field": "geo",
+                    "type": "geojson"
+                },
+                "color": {
+                    "field": "HDI",
+                    "type": "quantitative",
+                    "title": "HDI"
+                },
+                "tooltip": [{
+                        "field": "country",
+                        "type": "nominal",
+                        "title": "Country"
+                    },
+                    {
+                        "title": "HDI",
+                        "field": "HDI",
+                        "type": "quantitative"
+                    }
+                ]
             }
-        ]
-    },
+        }
+
+    ],
     "config": {
         "font": "Space Grotesk",
         "axis": {
@@ -73,9 +116,14 @@
             "titleFontSize": 15,
             "orient": "none",
             "legendY": 100,
-            "legendX": 930
+            "legendX": 940,
+            "titleAnchor": "start"
         },
-        "title": { "anchor": "middle", "fontSize": 16, "font": "Segoe UI", "fontWeight": 600 }
-
+        "title": {
+            "anchor": "middle",
+            "fontSize": 16,
+            "font": "Segoe UI",
+            "fontWeight": 600
+        }
     }
 }

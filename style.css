@@ -789,6 +789,8 @@ blockquote {
 
 .bodytext {
     font-family: 'Century Gothic', sans-serif;
+    overflow-wrap: break-word;
+    hyphens: manual;
 }
 
 .article-subtitle {
@@ -808,4 +810,8 @@ blockquote {
 .centre_layout {
     display: flex;
     justify-content: center;
+}
+
+.quote_text {
+    font-family: 'Spectral', serif;
 }
