@@ -85,7 +85,7 @@
             "labelFontSize": 13,
             "orient": "none",
             "direction": "horizontal",
-            "legendX": 150,
+            "legendX": 50,
             "legendY": 350,
             "titleAnchor": "start",
             "titleOrient": "left"
