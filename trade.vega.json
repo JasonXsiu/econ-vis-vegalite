@@ -23,6 +23,8 @@
             "as": "Type"
         }
     ],
+    "title":"\n"
+    ,
     "spacing": 0,
     "hconcat": [{
             "transform": [{
@@ -33,7 +35,7 @@
             }],
             "title": "Imports of goods and services ",
             "width": 180,
-            "height": 190,
+            "height": 255,
             "mark": "bar",
             "encoding": {
                 "y": {
@@ -79,7 +81,7 @@
         },
         {
             "width": 10,
-            "height": 190,
+            "height": 255,
             "view": {
                 "stroke": null
             },
@@ -109,7 +111,7 @@
             }],
             "title": "Exports of goods and services ",
             "width": 180,
-            "height": 190,
+            "height": 255,
             "mark": "bar",
             "encoding": {
                 "y": {
