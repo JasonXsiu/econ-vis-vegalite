@@ -7,7 +7,8 @@
             "input": "range",
             "min": 1980,
             "max": 2019,
-            "step": 1
+            "step": 1,
+            "name":"Year :"
         }
     }],
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
@@ -45,8 +46,8 @@
             "type": "nominal",
             "scale": {
                 "range": [
-                    "#675193",
-                    "#ca8861"
+                    "#761137",
+                    "#f2bc94"
                 ]
             },
             "title": "Official Flow"

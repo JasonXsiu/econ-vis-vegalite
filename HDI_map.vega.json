@@ -2,18 +2,19 @@
     "background": "#FBF7EB",
     "params": [{
         "name": "YearFilter",
-        "value": 2019,
+        "value": 2005,
         "bind": {
             "input": "range",
             "min": 1990,
             "max": 2019,
-            "step": 1
+            "step": 1,
+            "name": "Year : "
         }
     }],
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Hello World",
-    "width": 900,
-    "height": 390,
+    "title": ["","Human Development Index (HDI) by country",""],
+    "width": 990,
+    "height": 400,
     "data": {
         "url": "https://raw.githubusercontent.com/JasonXsiu/econ-vis-vegalite/main/dataset/HDI.csv"
     },
@@ -74,7 +75,7 @@
                 }
             ],
             "projection": {
-                "type": "equirectangular"
+                "type": "equalearth"
             },
             "mark": {
                 "type": "geoshape",
@@ -121,7 +122,7 @@
         },
         "title": {
             "anchor": "middle",
-            "fontSize": 16,
+            "fontSize": 19,
             "font": "Segoe UI",
             "fontWeight": 600
         }

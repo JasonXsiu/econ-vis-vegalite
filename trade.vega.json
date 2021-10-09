@@ -1,8 +1,9 @@
 {
     "params": [{
         "name": "YearFilter",
-        "value": 2000,
+        "value": 2005,
         "bind": {
+            "name":"Year :",
             "input": "range",
             "min": 1980,
             "max": 2019,
@@ -33,7 +34,7 @@
                     "equal": "Import"
                 }
             }],
-            "title": "Imports of goods and services ",
+            "title": ["Imports of goods and services ",""],
             "width": 180,
             "height": 255,
             "mark": "bar",
@@ -109,7 +110,7 @@
                     "equal": "Export"
                 }
             }],
-            "title": "Exports of goods and services ",
+            "title": ["Exports of goods and services ",""],
             "width": 180,
             "height": 255,
             "mark": "bar",
@@ -161,7 +162,7 @@
         },
         "title": {
             "anchor": "middle",
-            "fontSize": 15,
+            "fontSize": 16,
             "font": "Segoe UI",
             "fontWeight": 600
         }

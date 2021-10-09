@@ -1,0 +1,133 @@
+{
+  "background": "#FBF7EB",
+  "params": [
+    {
+      "name": "YearFilter",
+      "value": 2005,
+      "bind": {
+        "input": "range",
+        "min": 1980,
+        "max": 2019,
+        "step": 1,
+        "name":"Year :"
+      }
+    }
+  ],
+  "width": 85,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/JasonXsiu/econ-vis-vegalite/main/dataset/investment_cleaned.csv"
+  },
+  "title": ["Foreign direct investment by top 5 economies",""],
+  "transform": [
+    {
+      "filter": "datum.Year == YearFilter"
+    },
+    {
+      "calculate": "datum.In_or_Out == 'Inflow' ? 'Inflow' : 'Outflow'",
+      "as": "In_or_Out"
+    }
+  ],
+  "facet": {
+    "field": "country",
+    "type": "ordinal",
+    "header": {
+      "orient": "bottom"
+    },
+    "spacing": 10,
+    "title":"Country"
+  },
+  "spec": {
+    "encoding": {
+      "y": {
+        "aggregate": "sum",
+        "field": "amount",
+        "title": "Amount",
+        "axis": {
+          "grid": false
+        }
+      },
+      "x": {
+        "field": "In_or_Out",
+        "axis": null
+      }
+    },
+    "layer": [
+      {
+        "mark": "bar",
+        "encoding": {
+          "color": {
+            "field": "In_or_Out",
+            "type": "nominal",
+            "scale": {
+              "range": [
+                "#fd9b4d",
+                "#993441"
+              ]
+            } , "title": "Official Flow"
+          },
+          "tooltip": [{
+            "title": "Country",
+            "field": "country",
+            "type": "nominal"
+        },
+        {
+            "title": "Type",
+            "field": "In_or_Out",
+            "type": "nominal"
+        },
+        {
+            "field": "amount",
+            "type": "quantitative",
+            "title": "Values"
+        }
+    ]
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "dx": -5,
+          "angle": 90,
+          "baseline": "middle",
+          "align": "right"
+        },
+        "encoding": {
+          "text": {
+            "aggregate": "sum",
+            "field": "amount",
+            "type": "quantitative",
+            "format": ".2f"
+          }
+        }
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": "transparent"
+    },
+    "font": "Space Grotesk",
+    "axis": {
+      "domainWidth": 1,
+      "labelFontSize": 13,
+      "titleFontSize": 15
+    },
+    "title": {
+      "anchor": "middle",
+      "fontSize": 18,
+      "font": "Segoe UI",
+      "fontWeight": 600
+    },
+    "legend": {
+      "titleFontSize": 14,
+      "labelFontSize": 13,
+      "orient": "none",
+      "direction": "horizontal",
+      "legendX": 130,
+      "legendY": 250,
+      "titleAnchor": "start",
+      "titleOrient": "left"
+    }
+  }
+}

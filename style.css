@@ -1,5 +1,50 @@
 /* cspell:disable-file */
+html
+{
+    height: 100%;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td
+{
+    margin: 0;
+    padding: 0;
+}
+table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
 
+}
+fieldset, img
+{
+    border: 0;
+}
+address, caption, cite, code, dfn, em, strong, th, var
+{
+    font-style: normal;
+    font-weight: normal;
+}
+ol, ul
+{
+    list-style: none;
+}
+caption, th
+{
+    text-align: left;
+}
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 100%;
+    font-weight: normal;
+}
+q:before, q:after
+{
+    content: '';
+}
+abbr, acronym
+{
+    border: 0;
+}
+/*reset.css*/
 
 /* webkit printing magic: print all background colors */
 
@@ -816,10 +861,37 @@ blockquote {
     font-family: 'Spectral', serif;
     background: #f9f9f9;
     border-left: 15px solid #ccc;
-/*    margin: 1.5em 10px;*/
+    /*    margin: 1.5em 10px;*/
     padding: 0.5em 10px;
     quotes: "\201C""\201D""\2018""\2019";
     font-size: 19px;
     font-style: italic;
+}
 
+strong , #bold{
+    font-family: 'Aurulent Sans', sans-serif;
+}
+i{
+    font-family: 'Aurulent Sans', sans-serif;
+font-size: medium;
+word-break: break-all;
+}
+.bodytext_2_column{
+    font-family: 'Century Gothic', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    column-count: 2;
+
+}
+
+.bodytext_3_column{
+    font-family: 'Century Gothic', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+columns: 300px 3;
+}
+
+header {
+    display: block;
+    block-size: 150px;
 }

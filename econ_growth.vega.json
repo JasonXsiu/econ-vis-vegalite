@@ -1,7 +1,7 @@
 {
     "params": [{
         "name": "Year",
-        "value": 2000,
+        "value": 2005,
         "bind": {
             "input": "range",
             "min": 1961,
@@ -10,7 +10,7 @@
         }
     }],
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "title": "Inflation growth for the top 5 economies, 1961-2020",
+    "title": ["","Inflation growth for the top 5 economies, 1961-2020"],
     "background": "#FBF7EB",
     "data": {
         "url": "https://raw.githubusercontent.com/JasonXsiu/econ-vis-vegalite/main/dataset/Econ_growth.csv"

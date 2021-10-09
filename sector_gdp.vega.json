@@ -4,9 +4,11 @@
     "data": {
         "url": "https://raw.githubusercontent.com/JasonXsiu/econ-vis-vegalite/main/dataset/serv_indust_cleaned.csv"
     },
-    "title": "The Industrial sector (% of GDP)",
+    "title": ["The Industrial sector (% of GDP) by top 5 economies",""],
     "background": "#FBF7EB",
-    "hconcat": [{
+
+    "hconcat": [
+        {
             "width": 180,
             "height": 160,
             "title": "Industrial",
@@ -50,7 +52,8 @@
                     "value": 0.2
                 }
             },
-            "layer": [{
+            "layer": [
+                {
                     "description": "transparent layer to make it easier to trigger selection",
                     "params": [{
                         "name": "hover",
@@ -64,7 +67,8 @@
                             ],
                             "on": "mouseover"
                         }
-                    }],
+                    }
+                ],
                     "mark": {
                         "type": "line",
                         "strokeWidth": 8,
@@ -284,8 +288,7 @@
                         "x": {
                             "aggregate": "max",
                             "field": "Year",
-                            "type": "temporal"
-                        },
+                            "type": "temporal"                        },
                         "y": {
                             "aggregate": {
                                 "argmax": "Year"
@@ -321,8 +324,14 @@
         "axis": {
             "labelFontSize": 10,
             "titleFontSize": 15,
-            "tickSize": 20
+            "tickSize": 20,
+            "grid": false
         },
-        "title": { "anchor": "middle", "fontSize": 20, "font": "Segoe UI", "fontWeight": 600 }
+        "title": { "anchor": "middle", "fontSize": 20, "font": "Segoe UI", "fontWeight": 600 },
+        "style": {
+            "cell": {
+              "stroke": "transparent"
+            }
+          }
     }
 }

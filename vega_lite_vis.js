@@ -1,6 +1,6 @@
 var vg_eg = "econ_growth.vega.json";
 var vg_trade = "trade.vega.json";
-var vg_investment = "investment.vega.json";
+var vg_investment = "investment_group_bar.vega.json";
 var vg_sector_gdp = "sector_gdp.vega.json";
 var vg_pvty_map = "pvty_map.vega.json";
 var vg_HDI = "HDI_map.vega.json";
@@ -32,3 +32,4 @@ vegaEmbed("#HDI_map", vg_HDI).catch(console.error);
 vegaEmbed("#pop_fert_life", vg_pop_fert_life, { "actions": false }).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);
+
