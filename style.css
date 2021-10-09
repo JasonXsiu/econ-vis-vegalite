@@ -894,3 +894,9 @@ header {
     display: block;
     block-size: 150px;
 }
+
+@font-face { font-family: 'Century Gothic', sans-serif;}
+@font-face { font-family: 'Aurulent Sans', sans-serif;}
+@font-face {    font-family: 'Bienetresocial', sans-serif;}
+@font-face {    font-family: 'Spectral', serif;}
+
