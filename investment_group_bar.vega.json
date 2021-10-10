@@ -75,12 +75,7 @@
             "title": "Type",
             "field": "In_or_Out",
             "type": "nominal"
-        },
-        {
-            "field": "amount",
-            "type": "quantitative",
-            "title": "Values"
-        }
+        } 
     ]
         }
       },

@@ -27,7 +27,9 @@ vegaEmbed("#pvty_map", vg_pvty_map, { "actions": false }).then(function(result) 
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
 }).catch(console.error);
 
-vegaEmbed("#HDI_map", vg_HDI).catch(console.error);
+vegaEmbed("#HDI_map", vg_HDI, { "actions": false }).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+}).catch(console.error);
 
 vegaEmbed("#pop_fert_life", vg_pop_fert_life, { "actions": false }).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view

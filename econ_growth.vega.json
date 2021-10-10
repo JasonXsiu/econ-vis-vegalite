@@ -43,6 +43,7 @@
                     "value": "lightgray"
                 },
                 "tooltip": [{
+                    "title":"Country",
                         "field": "country",
                         "type": "nominal"
                     },
