@@ -106,7 +106,9 @@ h3 {
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 0.75em;
-    font-family: 'Bienetresocial', sans-serif;}
+    /*font-family: 'Bienetresocial', sans-serif;*/
+    font-family: Lyon-Text, Georgia, ui-serif, serif;
+}
 
 h1 {
     font-size: 1.875rem;
