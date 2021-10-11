@@ -72,8 +72,8 @@ body {
 }
 
 body {
-    line-height: 1.5;
-    white-space: pre-line;
+    line-height: 1.8;
+    white-space: normal;
 }
 
 a,
@@ -106,7 +106,6 @@ h3 {
     font-weight: 700;
     margin-top: 0;
     margin-bottom: 0.75em;
-    /*font-family: 'Bienetresocial', sans-serif;*/
     font-family: Lyon-Text, Georgia, ui-serif, serif;
 }
 
@@ -870,12 +869,14 @@ blockquote {
 }
 
 strong , #bold{
+    font-size :17px ;
     font-family: 'Aurulent Sans', sans-serif;
+    text-justify: inter-word;
 }
 i{
     font-family: 'Aurulent Sans', sans-serif;
 font-size: medium;
-word-break: break-all;
+text-justify: inter-word;
 }
 .bodytext_2_column{
     font-family: 'Century Gothic', sans-serif;
@@ -897,9 +898,14 @@ header {
     block-size: 150px;
 }
 
-@font-face { font-family: 'Century Gothic', sans-serif;}
-@font-face { font-family: 'Aurulent Sans', sans-serif;}
-@import url('http://fonts.cdnfonts.com/css/bienetresocial');
-@font-face {    font-family: 'Bienetresocial', sans-serif;}
-@font-face {    font-family: 'Spectral', serif;}
+.question_text{
+    justify-content: left;
+    /* align horizontal */
+    align-items: center;
+    /* align vertical */
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    font-weight: 550;
+    
 
+}
