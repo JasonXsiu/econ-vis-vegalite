@@ -340,6 +340,7 @@ ol>li {
     font-weight: 700;
     color: #222;
     font-family: Tahoma, sans-serif;
+    font-style: normal;
 }
 
 time {
@@ -830,12 +831,14 @@ blockquote {
     font-size: 12px;
     font-family: "Space Grotesk", sans-serif;
     margin: 0;
+    white-space: pre-wrap;
 }
 
 .bodytext {
     font-family: 'Century Gothic', sans-serif;
     text-align: justify;
     text-justify: inter-word;
+    
 }
 
 .article-subtitle {
@@ -906,6 +909,8 @@ header {
     font-size: 1.3rem;
     margin-top: 1.5rem;
     font-weight: 550;
-    
-
 }
+
+
+
+

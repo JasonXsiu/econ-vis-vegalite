@@ -1,4 +1,6 @@
 {
+  "width": 85,
+  "height": 360,
   "background": "#FBF7EB",
   "params": [
     {
@@ -9,16 +11,17 @@
         "min": 1980,
         "max": 2019,
         "step": 1,
-        "name":"Year :"
+        "name": "Year :"
       }
     }
   ],
-  "width": 85,
-  "height": 300,
   "data": {
     "url": "https://raw.githubusercontent.com/JasonXsiu/econ-vis-vegalite/main/dataset/investment_cleaned.csv"
   },
-  "title": ["Foreign direct investment by top 5 economies",""],
+  "title": [
+    "Foreign direct investment by top 5 economies",
+    ""
+  ],
   "transform": [
     {
       "filter": "datum.Year == YearFilter"
@@ -35,7 +38,7 @@
       "orient": "bottom"
     },
     "spacing": 10,
-    "title":"Country"
+    "title": "Country"
   },
   "spec": {
     "encoding": {
@@ -45,6 +48,12 @@
         "title": "Amount",
         "axis": {
           "grid": false
+        },
+        "scale": {
+          "domain": [
+            -4,
+            19.5
+          ]
         }
       },
       "x": {
@@ -64,19 +73,22 @@
                 "#fd9b4d",
                 "#993441"
               ]
-            } , "title": "Official Flow"
-          },
-          "tooltip": [{
-            "title": "Country",
-            "field": "country",
-            "type": "nominal"
-        },
-        {
-            "title": "Type",
-            "field": "In_or_Out",
-            "type": "nominal"
-        } 
-    ]
+            },
+            "title": "Official Flow"
+          }
+          ,
+          "tooltip": [
+            {
+              "title": "Country",
+              "field": "country",
+              "type": "nominal"
+            },
+            {
+              "title": "Type",
+              "field": "In_or_Out",
+              "type": "nominal"
+            }
+          ]
         }
       },
       {
@@ -100,7 +112,8 @@
   },
   "config": {
     "view": {
-      "stroke": "transparent"
+      "stroke": "transparent",
+      "continuousHeight":330
     },
     "font": "Space Grotesk",
     "axis": {
@@ -118,11 +131,10 @@
       "titleFontSize": 14,
       "labelFontSize": 13,
       "orient": "none",
-      "direction": "horizontal",
-      "legendX": 130,
-      "legendY": 250,
+      "legendX": 20,
+      "legendY": 15,
       "titleAnchor": "start",
-      "titleOrient": "left"
+      "strokeWidth":1.5
     }
   }
 }
