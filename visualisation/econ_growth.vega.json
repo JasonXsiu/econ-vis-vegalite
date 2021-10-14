@@ -1,0 +1,118 @@
+{
+    "params": [
+      {
+        "name": "Year",
+        "value": 2005,
+        "bind": {"input": "range", "min": 1961, "max": 2020, "step": 1}
+      }
+    ],
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": ["", "Inflation growth for the top 5 economies, 1961-2020"],
+    "background": "#FBF7EB",
+    "data": {
+      "url": "https://raw.githubusercontent.com/JasonXsiu/econ-vis-vegalite/main/dataset/Econ_growth.csv"
+    },
+    "vconcat": [
+      {
+        "encoding": {
+          "x": {"field": "Year", "title": "Year", "type": "ordinal"},
+          "y": {
+            "title": "Inflation",
+            "field": "Inflation",
+            "type": "quantitative"
+          },
+          "color": {
+            "condition": {
+              "param": "brush",
+              "title": "Country",
+              "field": "country",
+              "type": "nominal",
+              "scale": {
+                "domain": [
+                  "China",
+                  "Germany",
+                  "Japan",
+                  "United Kingdom",
+                  "United States"
+                ],
+                "range": ["#483D8B", "#F1B420", "#CAA88C", "#E151AF", "#8B4513"]
+              }
+            },
+            "value": "lightgray"
+          }
+        },
+        "width": 800,
+        "height": 320,
+        "layer": [
+          {
+            "encoding": {
+              "tooltip": [
+                {"title": "Country", "field": "country", "type": "nominal"},
+                {"field": "Income", "type": "quantitative"},
+                {"field": "Inflation", "type": "quantitative"},
+                {"field": "Year", "type": "quantitative"}
+              ],
+              "size": {
+                "title": "Income",
+                "field": "Income",
+                "type": "quantitative"
+              }
+            },
+            "params": [
+              {
+                "name": "brush",
+                "select": {"type": "interval", "encodings": ["x"]}
+              }
+            ],
+            "transform": [{"filter": {"param": "click"}}],
+            "mark": "point"
+          },
+          {"transform": [{"filter": {"param": "click"}}], "mark": "line"}
+        ]
+      },
+      {
+        "encoding": {
+          "color": {
+            "condition": {
+              "param": "click",
+              "field": "country",
+              "scale": {
+                "domain": [
+                  "China",
+                  "Germany",
+                  "Japan",
+                  "United Kingdom",
+                  "United States"
+                ],
+                "range": ["#e7ba52", "#a7a7a7", "#aec7e8", "#1f77b4", "#9467bd"]
+              }
+            },
+            "value": "lightgray"
+          },
+          "x": {"title": "Income", "field": "Income", "type": "quantitative"},
+          "y": {"title": "Country", "field": "country"}
+        },
+        "width": 800,
+        "mark": "bar",
+        "title": "Income for the top 5 economies, 1961-2020",
+        "params": [
+          {"name": "click", "select": {"type": "point", "encodings": ["color"]}}
+        ],
+        "transform": [
+          {"filter": {"param": "brush"}},
+          {"filter": "datum.Year == Year"}
+        ]
+      }
+    ],
+    "config": {
+      "font": "Space Grotesk",
+      "axis": {"labelFontSize": 10, "titleFontSize": 15},
+      "legend": {"labelFontSize": 12, "titleFontSize": 14},
+      "title": {
+        "anchor": "middle",
+        "fontSize": 20,
+        "font": "Segoe UI",
+        "fontWeight": 600
+      }
+    }
+  }

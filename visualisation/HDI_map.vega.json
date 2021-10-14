@@ -1,0 +1,130 @@
+{
+    "background": "#FBF7EB",
+    "params": [{
+        "name": "YearFilter",
+        "value": 2005,
+        "bind": {
+            "input": "range",
+            "min": 1990,
+            "max": 2019,
+            "step": 1,
+            "name": "Year : "
+        }
+    }],
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": ["","Human Development Index (HDI) by country",""],
+    "width": 990,
+    "height": 400,
+    "data": {
+        "url": "https://raw.githubusercontent.com/JasonXsiu/econ-vis-vegalite/main/dataset/HDI.csv"
+    },
+    "layer": [
+
+        {
+
+            "transform": [{
+                    "lookup": "country",
+                    "from": {
+                        "data": {
+                            "url": "https://raw.githubusercontent.com/KaneSec/vega_lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+                            "format": {
+                                "type": "topojson",
+                                "feature": "ne_110m_admin_0_countries"
+                            }
+                        },
+                        "key": "properties.NAME"
+                    },
+                    "as": "geo"
+                },
+                {
+                    "filter": "datum.Year == YearFilter"
+                }, { "calculate": "'Data is not available in ' + datum.country", "as": "note" }
+            ]
+
+            ,
+            "mark": { "type": "geoshape", "fill": "lightgray", "stroke": "white" },
+            "encoding": {
+                "tooltip": {
+                    "field": "note"
+                },
+
+                "shape": {
+                    "field": "geo",
+                    "type": "geojson"
+                }
+
+            }
+        },
+        {
+            "transform": [{
+                    "lookup": "country",
+                    "from": {
+                        "data": {
+                            "url": "https://raw.githubusercontent.com/KaneSec/vega_lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+                            "format": {
+                                "type": "topojson",
+                                "feature": "ne_110m_admin_0_countries"
+                            }
+                        },
+                        "key": "properties.NAME_LONG"
+                    },
+                    "as": "geo"
+                },
+                {
+                    "filter": "datum.Year == YearFilter"
+                }
+            ],
+            "projection": {
+                "type": "equalearth"
+            },
+            "mark": {
+                "type": "geoshape",
+                "stroke": "white"
+            },
+            "encoding": {
+                "shape": {
+                    "field": "geo",
+                    "type": "geojson"
+                },
+                "color": {
+                    "field": "HDI",
+                    "type": "quantitative",
+                    "title": "HDI"
+                },
+                "tooltip": [{
+                        "field": "country",
+                        "type": "nominal",
+                        "title": "Country"
+                    },
+                    {
+                        "title": "HDI",
+                        "field": "HDI",
+                        "type": "quantitative"
+                    }
+                ]
+            }
+        }
+
+    ],
+    "config": {
+        "font": "Space Grotesk",
+        "axis": {
+            "labelFontSize": 15,
+            "titleFontSize": 15
+        },
+        "legend": {
+            "labelFontSize": 15,
+            "titleFontSize": 15,
+            "orient": "none",
+            "legendY": 100,
+            "legendX": 940,
+            "titleAnchor": "start"
+        },
+        "title": {
+            "anchor": "middle",
+            "fontSize": 19,
+            "font": "Segoe UI",
+            "fontWeight": 600
+        }
+    }
+}

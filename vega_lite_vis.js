@@ -1,10 +1,10 @@
-var vg_eg = "econ_growth.vega.json";
-var vg_trade = "trade.vega.json";
-var vg_investment = "investment_group_bar.vega.json";
-var vg_sector_gdp = "sector_gdp.vega.json";
-var vg_pvty_map = "pvty_map.vega.json";
-var vg_HDI = "HDI_map.vega.json";
-var vg_pop_fert_life = "pop_fert_life.vega.json";
+var vg_eg = "visualisation/econ_growth.vega.json";
+var vg_trade = "visualisation/trade.vega.json";
+var vg_investment = "visualisation/investment_group_bar.vega.json";
+var vg_sector_gdp = "visualisation/sector_gdp.vega.json";
+var vg_pvty_map = "visualisation/pvty_map.vega.json";
+var vg_HDI = "visualisation/HDI_map.vega.json";
+var vg_pop_fert_life = "visualisation/pop_fert_life.vega.json";
 
 
 vegaEmbed("#econ_growth", vg_eg, { "actions": false }).then(function(result) {

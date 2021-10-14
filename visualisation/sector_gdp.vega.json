@@ -1,0 +1,337 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Multi-series line chart with labels and interactive highlight on hover.  We also set the selection's initial value to provide a better screenshot",
+    "data": {
+        "url": "https://raw.githubusercontent.com/JasonXsiu/econ-vis-vegalite/main/dataset/serv_indust_cleaned.csv"
+    },
+    "title": ["The Industrial sector (% of GDP) by top 5 economies",""],
+    "background": "#FBF7EB",
+
+    "hconcat": [
+        {
+            "width": 180,
+            "height": 160,
+            "title": "Industrial",
+            "encoding": {
+                "x": {
+                    "field": "Year",
+                    "type": "temporal",
+                    "title": "Year",
+                    "axis": {
+                        "labelAngle": 270,
+                        "tickCount": 20
+                    }
+                },
+                "y": {
+                    "field": "Industrial",
+                    "type": "quantitative",
+                    "title": "Percentage",
+                    "scale": {
+                        "domain": [
+                            0,
+                            100
+                        ]
+                    }
+                },
+                "color": {
+                    "condition": {
+                        "param": "hover",
+                        "field": "country",
+                        "type": "nominal",
+                        "legend": null
+                    },
+                    
+
+                    "value": "grey"
+                },
+                "opacity": {
+                    "condition": {
+                        "param": "hover",
+                        "value": 1
+                    },
+                    "value": 0.2
+                }
+            },
+            "layer": [
+                {
+                    "description": "transparent layer to make it easier to trigger selection",
+                    "params": [{
+                        "name": "hover",
+                        "value": [{
+                            "country": "China"
+                        }],
+                        "select": {
+                            "type": "point",
+                            "fields": [
+                                "country"
+                            ],
+                            "on": "mouseover"
+                        }
+                    }
+                ],
+                    "mark": {
+                        "type": "line",
+                        "strokeWidth": 8,
+                        "stroke": "transparent"
+                    }
+                },
+                {
+                    "mark": "line"
+                },
+                {
+                    "encoding": {
+                        "x": {
+                            "aggregate": "max",
+                            "field": "Year",
+                            "type": "temporal"
+                        },
+                        "y": {
+                            "aggregate": {
+                                "argmax": "Year"
+                            },
+                            "field": "Industrial"
+                        }
+                    },
+                    "layer": [{
+                            "mark": {
+                                "type": "circle"
+                            }
+                        },
+                        {
+                            "mark": {
+                                "type": "text",
+                                "align": "left",
+                                "dx": 4
+                            },
+                            "encoding": {
+                                "text": {
+                                    "field": "country",
+                                    "type": "nominal"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Service",
+            "encoding": {
+                "x": {
+                    "field": "Year",
+                    "type": "temporal",
+                    "title": "Year",
+                    "axis": {
+                        "labelAngle": 270,
+                        "tickCount": 20
+                    }
+                },
+                "y": {
+                    "field": "Services",
+                    "type": "quantitative",
+                    "title": "Percentage",
+                    "scale": {
+                        "domain": [
+                            0,
+                            100
+                        ]
+                    }
+                },
+                "color": {
+                    "condition": {
+                        "param": "hover",
+                        "field": "country",
+                        "type": "nominal",
+                        "legend": null
+                    },
+                    "value": "grey"
+                },
+                "opacity": {
+                    "condition": {
+                        "param": "hover",
+                        "value": 1
+                    },
+                    "value": 0.2
+                }
+            },
+            "width": 180,
+            "height": 160,
+            "layer": [{
+
+                    "description": "transparent layer to make it easier to trigger selection",
+                    "params": [{
+                        "name": "hover",
+                        "value": [{
+                            "country": "China"
+                        }],
+                        "select": {
+                            "type": "point",
+                            "fields": [
+                                "country"
+                            ],
+                            "on": "mouseover"
+                        }
+                    }],
+                    "mark": {
+                        "type": "line",
+                        "strokeWidth": 8,
+                        "stroke": "transparent"
+                    }
+                },
+                {
+                    "mark": "line"
+                },
+                {
+                    "encoding": {
+                        "x": {
+                            "aggregate": "max",
+                            "field": "Year",
+                            "type": "temporal"
+                        },
+                        "y": {
+                            "aggregate": {
+                                "argmax": "Year"
+                            },
+                            "field": "Services"
+                        }
+                    },
+                    "layer": [{
+                            "mark": {
+                                "type": "circle"
+                            }
+                        },
+                        {
+                            "mark": {
+                                "type": "text",
+                                "align": "left",
+                                "dx": 4
+                            },
+                            "encoding": {
+                                "text": {
+                                    "field": "country",
+                                    "type": "nominal"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "width": 180,
+            "height": 160,
+            "title": "Agriculture",
+            "encoding": {
+                "x": {
+                    "field": "Year",
+                    "type": "temporal",
+                    "title": "Year",
+                    "axis": {
+                        "labelAngle": 270,
+                        "tickCount": 20
+                    }
+                },
+                "y": {
+                    "field": "Agri",
+                    "type": "quantitative",
+                    "title": "Percentage",
+                    "scale": {
+                        "domain": [
+                            0,
+                            100
+                        ]
+                    }
+                },
+                "color": {
+                    "condition": {
+                        "param": "hover",
+                        "field": "country",
+                        "type": "nominal",
+                        "legend": null
+                    },
+                    "value": "grey"
+                },
+                "opacity": {
+                    "condition": {
+                        "param": "hover",
+                        "value": 1
+                    },
+                    "value": 0.2
+                }
+            },
+            "layer": [{
+                    "description": "transparent layer to make it easier to trigger selection",
+                    "params": [{
+                        "name": "hover",
+                        "value": [{
+                            "country": "China"
+                        }],
+                        "select": {
+                            "type": "point",
+                            "fields": [
+                                "country"
+                            ],
+                            "on": "mouseover"
+                        }
+                    }],
+                    "mark": {
+                        "type": "line",
+                        "strokeWidth": 8,
+                        "stroke": "transparent"
+                    }
+                },
+                {
+                    "mark": "line"
+                },
+                {
+                    "encoding": {
+                        "x": {
+                            "aggregate": "max",
+                            "field": "Year",
+                            "type": "temporal"                        },
+                        "y": {
+                            "aggregate": {
+                                "argmax": "Year"
+                            },
+                            "field": "Agri"
+                        }
+                    },
+                    "layer": [{
+                            "mark": {
+                                "type": "circle"
+                            }
+                        },
+                        {
+                            "mark": {
+                                "type": "text",
+                                "align": "left",
+                                "dx": 4
+                            },
+                            "encoding": {
+                                "text": {
+                                    "field": "country",
+                                    "type": "nominal"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "config": {
+        "font": "Space Grotesk",
+        "axis": {
+            "labelFontSize": 10,
+            "titleFontSize": 15,
+            "tickSize": 20,
+            "grid": false
+        },
+        "title": { "anchor": "middle", "fontSize": 20, "font": "Segoe UI", "fontWeight": 600 },
+        "style": {
+            "cell": {
+              "stroke": "transparent"
+            }
+          }
+    }
+}
